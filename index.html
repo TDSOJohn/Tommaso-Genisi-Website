@@ -5,10 +5,16 @@
 </head>
 <body>
 	<div id="navbar">
-		<ul id="menu">
+		<ul class="menu">
 			<li class="menu_entry"><a href="bio.html">Bio</a></li>
 			<li class="menu_entry"> <a href="#contacts" id="scroll-to-bottom">Contacts</a></li>
-			<li class="menu_entry">Projects</li>
+			<li class="menu_entry" id="projects-submenu">Projects
+				<ul class="menu">
+					<li class="menu_entry">Project 1</li>
+					<li class="menu_entry">Project 2</li>
+					<li class="menu_entry">Project 3</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 	<div class="decoration">
@@ -22,29 +28,29 @@
 	</div>
 	<div class="container">
 		<div class="image-stack">
-			<div class="image-stack__item image-stack__item-top">
+			<div class="image-stack__item image-stack__item-1">
 				<img src="images/01.jpg" class="portrait" id="image01">
 			</div>
-			<div class="image-stack__item image-stack__item-right">
+			<div class="image-stack__item image-stack__item-2">
 				<img src="images/02.jpg" class="portrait" id="image02">
 			</div>
-			<div class="image-stack__item image-stack__item-bottom">
+			<div class="image-stack__item image-stack__item-3">
 				<img src="images/03.jpg" class="landscape" id="image03">
 			</div>
-			<div class="image-stack__item image-stack__item-top-second">
+			<div class="image-stack__item image-stack__item-4">
 				<img src="images/04.jpg" class="portrait" id="image04">
 			</div>
 		</div>
 	</div>
 </body>
-<div id="contacts" class="full-width-container">
-	<div class="image-stack">
-		<div class="title image-stack__item image-stack__text-center">
-			<p>Contacts</p>
-			<p>Instagram: _tomgenisi</p>
-			<p>eMail: genisi.tommaso@gmail.com</p>
-			<p>Telephone: +39 345 1168791</p>
-		</div>
+<div id="contacts">
+	<div class="fullscreen-text">
+		<p class="picnic">Contacts</p>
+		<p class="pptelegraf">Instagram: _tomgenisi</p>
+		<p class="pptelegraf">eMail: genisi.tommaso@gmail.com</p>
+	</div>
+	<div class="image-halfscreen">
+		<img src="images/15.jpg" id="image15">
 	</div>
 </div>
 <div class="full-width-container">
