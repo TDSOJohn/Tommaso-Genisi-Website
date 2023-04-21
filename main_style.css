@@ -172,13 +172,13 @@ body {
 	grid-column: 9 / span 4;
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1201px) {
 	.image-stack__item > img:hover {
 		transform: scale(1.2);
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 	.image-stack__item {
 		display: block;
 		width: 100%;
