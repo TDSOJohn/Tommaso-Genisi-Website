@@ -180,8 +180,8 @@ body {
 
 @media screen and (max-width: 1200px) {
 	.image-stack__item {
-		display: block;
-		width: 100%;
+		display: inline-block;
+		width: 49%;
 	}
 	.full-width-container {
 		width: 100%;
