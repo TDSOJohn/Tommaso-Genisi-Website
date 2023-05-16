@@ -30,10 +30,29 @@ a {
 	text-decoration: none;
 }
 
-.decoration, .title {
+#navbar {
+	position: fixed;
+	visibility: hidden;
+	z-index: 9;
+}	
+
+.decoration, #title {
 	font-family: picnic_regular;
 	font-size: 48;
 	display: block;
+}
+
+.decoration {
+	position: fixed;
+	z-index: 9;
+}
+
+.back-to-top {
+	bottom: 20px;
+}
+
+.navbar-mobile-icon {
+	top: 20px;
 }
 
 body {
@@ -44,7 +63,7 @@ body {
 .decoration {
 }
 
-.title {
+#title {
 	text-align: center;
 }
 
@@ -71,7 +90,6 @@ body {
 .image-stack__item-1 {
 	grid-row: 1;
 	grid-column: 2 / span 5;
-	padding-top: 20%;
 	z-index: 1;
 }
 
@@ -82,20 +100,16 @@ body {
 }
 
 .image-stack__item-3 {
-	grid-column: 2 / span 7;
-	grid-row: 2;
+	grid-column: 3 / span 8;
+	grid-row: 1;
+	padding-top: 90%;
 	z-index: 2;
 }
 
-.image-stack__item-4 {
-	grid-column: 8 / span 4;
-	grid-row: 2;
-	z-index: 3;
-}
-
-.image-stack__text-center {
-	grid-column: 3 / span 8;
-	grid-row: 2;
+.image-stack__item-basic > img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
 }
 
 .image-stack__item > img {
@@ -112,9 +126,11 @@ body {
 .fullscreen-text {
 	position: absolute;
 	text-align: center;
-	font-size: 36px;
+	font-size: min(5vw, 40px);
 	width: 100%;
 	top: 100px;
+	container-type: inline-size;
+	container-name: fullscreen-text-container;
 }
 
 .image-halfscreen {
@@ -183,8 +199,12 @@ body {
 		display: inline-block;
 		width: 49%;
 	}
+	.image-stack__item-3 {
+		padding-top: 0%;
+	}
 	.full-width-container {
 		width: 100%;
+		padding: 100px 10px;
 	}
 	.image-stack {
 		display: block;
